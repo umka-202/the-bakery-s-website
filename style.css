@@ -37,6 +37,14 @@
  :where(blockquote, figure):where([class]) {
    margin: 0;
  }
+ a{
+    color:black ;
+ }
+ a:hover{
+    font-weight: 500;
+
+    font-size:20px ;
+ }
  
  /**
    Убираем внешние отступы вертикали нужным тегам,
@@ -172,6 +180,7 @@
     --input-height:60px;
     --container-width:590px;
     --container-padding-x:15px;
+    -o-transition-duration: 0.2s;
 
 
  }
@@ -193,4 +202,23 @@
 
     font-weight: 700;
     text-transform: uppercase;
+ }
+ .header{
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    column-gap: 20px;
+ }
+ .header-menu-list{
+    display: flex;
+    column-gap: 100px;
+ }
+ .header-menu-link{
+    display: inline-flex;
+    align-items: center;
+    height: 90px;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 13px;
  }
