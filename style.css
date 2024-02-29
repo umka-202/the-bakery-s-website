@@ -1,12 +1,12 @@
 @font-face {
-    font-family:FrizQuadrataCTT ;
+    font-family:'FrizQuadrataCTT';
     src: url('./fonts/ofont.ru_FrizQuadrataCTT.ttf') format('ttf');
     font-weight: 300;
     font-style: normal; 
     font-display: swap; 
 }
 @font-face {
-    font-family:FrizQuadrataCTT ;
+    font-family:'FrizQuadrataCTT' ;
     src: url('./fonts/ofont.ru_FrizQuadrataCTT\ bi.ttf') format('ttf');
     font-weight: 700;
     font-style: normal; 
@@ -36,6 +36,14 @@
  body,
  :where(blockquote, figure):where([class]) {
    margin: 0;
+ }
+ a,
+ button,
+ input,
+ textarea,  
+ svg * {
+  transition-duration: 0.2s;
+
  }
  a{
     color:black ;
@@ -191,34 +199,92 @@
     font-size: 16px;
     line-height: 1.5;
     background-color: var(--colar-dark);
+    
  }
+ 
  .container {
-    max-width: calc(var(--container-width) + var(--container-padding-x)*2);
-    margin-inline: auto;
-    padding-inline: var(--container-padding-x);
-
+    margin: 92px 120px;
+    background-color: #FAF6F1;
+    background-size: cover;
+    justify-content:space-between;
+    
  }
+ 
+  
+
+ 
  h1,h2,h3,h4,h5,h6{
 
     font-weight: 700;
     text-transform: uppercase;
  }
- .header{
+ header{
 
+    margin: 30px 0px 70px 0px;
+    
+  
+    
+ }
+ .header-inner{
     display: flex;
-    justify-content:space-between;
     align-items: center;
-    column-gap: 20px;
+    
+    justify-content: space-between;
+    
  }
  .header-menu-list{
     display: flex;
-    column-gap: 100px;
+    align-items: center;
+    column-gap: 75px;
+    
+    ;
  }
  .header-menu-link{
     display: inline-flex;
     align-items: center;
-    height: 90px;
     text-decoration: none;
     font-weight: 300;
     font-size: 13px;
+}
+
+ .header-menu{
+    font-family:'FrizQuadrataCTT';
+    background-color: var(--colar-brown);
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+   ;
  }
+ main{
+  
+ }
+ 
+ 
+ .main-inner{
+  background-image: url(../the-bakery-s-website/images/image\ 14.png);
+  margin-bottom: 210px;
+  color: #481D09;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  text-align: center;
+  
+ }
+ .main-inner-first{
+  padding-top: 60px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.button-main{
+  background-color: #481D09;
+  border-radius: 25.5px;
+  padding: 12px 22px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #FAF6F1;
+}
