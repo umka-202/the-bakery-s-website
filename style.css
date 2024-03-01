@@ -207,6 +207,7 @@
     background-color: #FAF6F1;
     background-size: cover;
     justify-content:space-between;
+    height: 2488px;
     
  }
  
@@ -220,7 +221,7 @@
  }
  header{
 
-    margin: 30px 0px 70px 0px;
+    margin: 30px 0px 22px 0px;
     
   
     
@@ -244,7 +245,7 @@
     align-items: center;
     text-decoration: none;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 16px;
 }
 
  .header-menu{
@@ -256,13 +257,15 @@
    ;
  }
  main{
+  margin: 1px 0;
   
  }
  
  
  .main-inner{
+  margin: 15px 0;
   background-image: url(../the-bakery-s-website/images/image\ 14.png);
-  margin-bottom: 210px;
+  margin-bottom: 21px;
   color: #481D09;
   background-repeat: no-repeat;
   background-position: center;
@@ -272,14 +275,26 @@
   
  }
  .main-inner-first{
-  padding-top: 60px; 
+  padding-top: 80px; 
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  
   
   
 }
+.text{
+  position: absolute;
+  
+   
+   
+   font-size: 16px;
+}
+
+
 .button-main{
+  margin-top: 17px;
   background-color: #481D09;
   border-radius: 25.5px;
   padding: 12px 22px;
@@ -287,4 +302,29 @@
   align-items: center;
   text-decoration: none;
   color: #FAF6F1;
+  font-size: 24px;
+}
+.seans{
+  text-align: center;
+  margin: 61px 0;
+  background-image: url(../the-bakery-s-website/images/Vector\ 2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 292px;
+  color: #481D09;
+  font-weight: 700;
+  font-size: 26px;
+}
+.seans-center{
+  transform: translateY(15px);
+  text-align: left;
+}
+
+
+.seans-left{
+  margin-top: 10px;
+}
+.seans-bottom-left{
+  margin: 250px 50px 0 0 ;
 }
