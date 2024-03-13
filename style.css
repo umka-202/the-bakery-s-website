@@ -12,172 +12,7 @@
     font-style: normal; 
     font-display: swap; 
 }
-/**
-  Нормализация блочной модели
- */
- *,
- *::before,
- *::after {
-   box-sizing: border-box;
- }
- 
- /**
-   Убираем внутренние отступы слева тегам списков,
-   у которых есть атрибут class
-  */
- :where(ul, ol):where([class]) {
-   padding-left: 0;
- }
- 
- /**
-   Убираем внешние отступы body и двум другим тегам,
-   у которых есть атрибут class
-  */
- body,
- :where(blockquote, figure):where([class]) {
-   margin: 0;
- }
- a,
- button,
- input,
- textarea,  
- svg * {
-  transition-duration: 0.2s;
 
- }
- a{
-    color:black ;
- }
- a:hover{
-    font-weight: 500;
-
-    font-size:20px ;
- }
- 
- /**
-   Убираем внешние отступы вертикали нужным тегам,
-   у которых есть атрибут class
-  */
- :where(
-   h1,
-   h2,
-   h3,
-   h4,
-   h5,
-   h6,
-   p,
-   ul,
-   ol,
-   dl
- ):where([class]) {
-   margin-block: 0;
- }
- 
- :where(dd[class]) {
-   margin-left: 0;
- }
- 
- :where(fieldset[class]) {
-   margin-left: 0;
-   padding: 0;
-   border: none;
- }
- 
- /**
-   Убираем стандартный маркер маркированному списку,
-   у которого есть атрибут class
-  */
- :where(ul[class]) {
-   list-style: none;
- }
- 
- /**
-   Обнуляем вертикальные внешние отступы параграфа,
-   объявляем локальную переменную для внешнего отступа вниз,
-   чтобы избежать взаимодействие с более сложным селектором
-  */
- p {
-   --paragraphMarginBottom: 24px;
- 
-   margin-block: 0;
- }
- 
- /**
-   Внешний отступ вниз для параграфа без атрибута class,
-   который расположен не последним среди своих соседних элементов
-  */
- p:where(:not([class]):not(:last-child)) {
-   margin-bottom: var(--paragraphMarginBottom);
- }
- 
- 
- /**
-   Упрощаем работу с изображениями
-  */
- img {
-   display: block;
-   max-width: 100%;
- }
- 
- /**
-   Наследуем свойства шрифт для полей ввода
-  */
- input,
- textarea,
- select,
- button {
-   font: inherit;
- }
- 
- html {
-   /**
-     Пригодится в большинстве ситуаций
-     (когда, например, нужно будет "прижать" футер к низу сайта)
-    */
-   height: 100%;
-   /**
-     Плавный скролл
-    */
-   scroll-behavior: smooth;
- }
- 
- body {
-   /**
-     Пригодится в большинстве ситуаций
-     (когда, например, нужно будет "прижать" футер к низу сайта)
-    */
-   min-height: 100%;
-   /**
-     Унифицированный интерлиньяж
-    */
-   line-height: 1.5;
- }
- 
- /**
-   Приводим к единому цвету svg-элементы
-  */
- svg *[fill] { fill: currentColor }
- svg *[stroke] { stroke: currentColor }
- 
- /**
-   Чиним баг задержки смены цвета при взаимодействии с svg-элементами
-  */
- svg * {
-   transition-property: fill, stroke;
- }
- 
- /**
-   Удаляем все анимации и переходы для людей,
-   которые предпочитают их не использовать
-  */
- @media (prefers-reduced-motion: reduce) {
-   * {
-     animation-duration: 0.01ms !important;
-     animation-iteration-count: 1 !important;
-     transition-duration: 0.01ms !important;
-     scroll-behavior: auto !important;
-   }
- }
  :root{
     --colar-dark: #F2EAE6;
     --colar-light: #FAF6F1;
@@ -207,7 +42,7 @@
     background-color: #FAF6F1;
     background-size: cover;
     justify-content:space-between;
-    height: 2488px;
+    height: 3000px;
     
  }
  
@@ -326,5 +161,109 @@
   margin-top: 10px;
 }
 .seans-bottom-left{
-  margin: 250px 50px 0 0 ;
+ 
+  
+  margin: 210px 1px 0px 75px ;
+  margin-bottom: 15px;
+  flex-direction: column;
 }
+
+.text-seans-bottom-left{
+  margin-right: 550px;
+  
+}
+.sea{
+  margin-right: 55pxS;
+}
+.seans-inner-first{
+  margin-top: 100px;
+}
+.seans-inner-second{
+  display:flex ;
+  
+  justify-content: space-around;
+}
+.first{
+  
+  
+  background-color: #F2EAE6;
+  padding-left: 30px;
+  padding-right: 15px;
+  padding-top: 45px;
+ 
+  align-items: center;
+  text-decoration: none;
+  float: right;
+  width: 21%;
+  
+}
+.second{
+  
+  background-color: #F2EAE6;
+  padding-left: 60px;
+  padding-right: 30px;
+  padding-top: 45px;
+  
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  width: 21%;
+  justify-content: center;
+  
+}
+.therd{
+  
+  background-color: #F2EAE6;
+  padding-left: 60px;
+  padding-right: 40px;
+  padding-top: 45px;
+  
+  align-items: flex-start;
+  text-decoration: none;
+  float: right;
+  width: 21%;
+}
+.seans-inner-forth{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #F2EAE6;
+  padding-top: 50px;
+  text-align: center;
+  text-decoration: none;
+  float: center;
+  width: 100%;
+}
+.ins{
+  margin-right: 50px;
+  margin-bottom: 25px;
+}
+.seans-inner-fifth{
+  display: flex;
+  justify-content: center;
+}
+.footer-inner{
+  background-image: url(../the-bakery-s-website/images/image\ 11.png);
+margin-top:1550px ;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 245px;
+text-align: center;
+color: #481D09;
+
+}
+.footer-inner-first{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+.footer-txt{
+  
+  position: absolute;
+  color: #481D09;
+  font-weight: bold;
+}
+  
