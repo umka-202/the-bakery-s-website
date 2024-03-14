@@ -243,17 +243,18 @@
   justify-content: center;
 }
 .footer-inner{
-  background-image: url(../the-bakery-s-website/images/image\ 11.png);
 margin-top:1550px ;
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-height: 245px;
+
 text-align: center;
 color: #481D09;
 
 }
 .footer-inner-first{
+  background-image: url(../the-bakery-s-website/images/image\ 11.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 245px;
   display: flex;
   justify-content: center;
   align-items: center;
